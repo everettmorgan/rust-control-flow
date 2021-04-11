@@ -12,16 +12,16 @@ fn main () {
 
 fn far_to_cel (f : f64) {
     let conv = (f - 32.0) * (5.0 / 9.0);
-    println!("{}F is equivalent to {:.3}C", f, conv);
+    println! ("{}F is equivalent to {:.3}C", f, conv);
 }
 
-fn fibonacci(x : i32) {
+fn fibonacci (x : i32) {
     let mut n1 = 0;
     let mut n2 = 1;
     let mut next = 1;
 
     for _number in 1..x+1 {
-        println!("{}", next);
+        println! ("{}", next);
         next = n1 + n2;
         n1 = n2;
         n2 = next;
@@ -30,16 +30,16 @@ fn fibonacci(x : i32) {
 
 fn loop_5 () {
     for number in (1..4).rev() {
-        println!("{}!", number);
+        println! ("{}!", number);
     }
-    println!("LIFTOFF");
+    println! ("LIFTOFF");
 }
 
 fn loop_4 () {
     let a : [i32; 5] = [10, 20, 30, 40, 50];
 
     for element in a.iter() {
-        println!("the value is: {}!", element);
+        println! ("the value is: {}!", element);
     }
 }
 
